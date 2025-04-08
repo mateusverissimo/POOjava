@@ -40,10 +40,10 @@ public class Lutador {
 
     public void status() {
         System.out.println(getNome());
-        System.out.println("É um peso" + getCategoria());
-        System.out.println(getVitorias() + "vitórias");
-        System.out.println(getDerrotas() + "derrotas");
-        System.out.println(getEmpates() + "empates");
+        System.out.println("É um peso " + getCategoria());
+        System.out.println(getVitorias() + " vitórias");
+        System.out.println(getDerrotas() + " derrotas");
+        System.out.println(getEmpates() + " empates");
 
     }
 
@@ -65,15 +65,18 @@ public class Lutador {
         this.setEmpates(this.getEmpates() + 1);
     }
 
-    public Lutador(String no, String na, int id, double al, int vi, int de, int em) {
+    public Lutador(String no, String na, int id, double al, double pe, int vi, int de, int em) {
         this.nome = no;
         this.nacionalidade = na;
         this.idade = id;
         this.altura = al;
+        this.setPeso(pe);
         this.vitorias = vi;
         this.derrotas = de;
         this.empates = em;
     }
+
+    public void
 
     public String getNome() {
         return nome;
