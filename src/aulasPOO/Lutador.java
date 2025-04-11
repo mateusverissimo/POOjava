@@ -76,8 +76,6 @@ public class Lutador {
         this.empates = em;
     }
 
-    public void
-
     public String getNome() {
         return nome;
     }
